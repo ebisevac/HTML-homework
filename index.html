@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+      /* Style The Dropdown Button */
+      .dropbtn {
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+      }
+      
+      /*Links inside the dropdown */
+     .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: #f1f1f1}
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-black">
+    <strong><a class="navbar-brand" href="index.html">Latitude</a></strong>
+
+      <ul class = "navbar-nav ml-auto" style="cursor:pointer">
+  
+          <div class="dropdown">
+            <button class="dropbtn">Plots</button>
+            <div class="dropdown-content">
+              <a href="maximumtemperature.html" class="nav-link" >Max Temperature</a>
+              <a href="humidity.html" >Humidity</a>
+              <a href="cloudines.html" >Cloudiness</a>
+              <a href="windspeed.html" >Wind Speed</a>
+            </div>   
+          </div> 
+        <li><a href="comparison.html" class="nav-link" style="color:gray">Comparison</a></li>
+        <li><a href="citydata.html" class="nav-link" style="color:gray">Data</a></li>
+      </ul>
+
+  </nav>
+  <h1>Summary: Latitude vs. X</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box">
+            <img src="Resources/assets/images/Fig1.png" alt="vs. Maximum Temperature">
+            <p>
+              The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+            </p>
+            <p>
+              After Assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factor we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualization created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+            </p>
+        </div>      
+      </div>
+    </div>
+  </div>
+ 
+
+</body>
+
+</html>
